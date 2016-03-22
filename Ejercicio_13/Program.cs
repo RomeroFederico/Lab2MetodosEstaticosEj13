@@ -19,6 +19,10 @@ namespace Ejercicio_13
         static void Main(string[] args)
         {
             Console.Title = "Ejercicio Nro. 13";
+
+            Console.Write(Conversor.DecimalBinario(16));
+
+            Console.ReadKey();
         }
     }
 }

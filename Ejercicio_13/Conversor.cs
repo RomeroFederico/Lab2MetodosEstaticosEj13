@@ -38,5 +38,24 @@ namespace Ejercicio_13
 
             return binario;
         }
+
+        /// <summary>
+        /// Convierte un numero binario a decimal.
+        /// </summary>
+        /// <param name="binario">
+        /// Numero a convertir.
+        /// </param>
+        public static double BinarioDecimal(string binario)
+        {
+            int numero = 0;
+
+            for (int i = 0; i < binario.Length; i++)
+            {
+                if (binario[i] == '1')
+                    numero += (int) Math.Pow(2, binario.Length - i - 1);
+            }
+
+            return numero;
+        }
     }
 }

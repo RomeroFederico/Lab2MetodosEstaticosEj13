@@ -20,7 +20,7 @@ namespace Ejercicio_13
         {
             Console.Title = "Ejercicio Nro. 13";
 
-            Console.Write(Conversor.DecimalBinario(16));
+            Console.Write(Conversor.BinarioDecimal(Conversor.DecimalBinario(0)));
 
             Console.ReadKey();
         }

@@ -18,14 +18,14 @@ namespace Ejercicio_13
     {
         static void Main(string[] args)
         {
-            double pruebaDecimal = 78;
+            double pruebaDecimal = 12;
             string pruebaBinario = "0011";
 
             Console.Title = "Ejercicio Nro. 13";
 
             Console.WriteLine("{0} == {1}", pruebaDecimal, Conversor.DecimalBinario(pruebaDecimal));
             Console.WriteLine("{0} == {1}", pruebaBinario, Conversor.BinarioDecimal(pruebaBinario));
-            Console.Write(Conversor.BinarioDecimal(Conversor.DecimalBinario(12)));
+            Console.Write(Conversor.BinarioDecimal(Conversor.DecimalBinario(1)));
 
             Console.ReadKey();
         }

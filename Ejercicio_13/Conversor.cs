@@ -17,26 +17,39 @@ namespace Ejercicio_13
         {
             string binario = "";
 
-            for (int i = 63; i >= 0; i--)
+            //for (int i = 63; i >= 0; i--)
+            //{
+            //    if (numero >= Math.Pow(2, i))
+            //    {
+            //        numero = numero % Math.Pow(2, i);
+            //        binario += "1";
+            //    }
+            //    else
+            //        binario += "0";
+            //}
+
+            //for (int i = 0; i < 16; i++)
+            //    if (binario.StartsWith("0000"))
+            //        binario = binario.Substring(4);
+
+            //return binario;
+
+            while (numero > 1)
             {
-                if (numero >= Math.Pow(2, i))
+                if (numero % 2 != 0)
                 {
-                    numero = numero % Math.Pow(2, i);
-                    binario += "1";
+                    binario = "1" + binario;
+                    numero--;
                 }
                 else
-                    binario += "0";
+                    binario = "0" + binario;
+                numero = numero / 2;
             }
 
-            for (int i = 0; i < 16; i++)
-            {
-                if (binario.StartsWith("0000"))
-                {
-                    binario = binario.Substring(4);
-                }
-            }
+            if (numero == 0)
+                return "0";
 
-            return binario;
+            return "1" + binario;
         }
 
         /// <summary>

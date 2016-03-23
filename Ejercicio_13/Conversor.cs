@@ -21,7 +21,7 @@ namespace Ejercicio_13
             {
                 if (numero >= Math.Pow(2, i))
                 {
-                    numero -= Math.Pow(2, i);
+                    numero = numero % Math.Pow(2, i);
                     binario += "1";
                 }
                 else
